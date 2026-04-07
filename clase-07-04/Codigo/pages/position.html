@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- esto es un comentario -->
+    <!-- info para los navegadores y buscadores -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Practica de html y css" />
+    <meta name="keywords" content="etiquetas, atributos, csss, html" />
+    <meta name="author" content="Emilse Arias" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Primer web</title>
+  </head>
+  <body>
+    <header>
+      <!-- barra de navegacion -->
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="elementos.html">Elementos</a>
+        <a href="position.html">Position</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="contactos.html">Contactos</a>
+      </nav>
+    </header>
+      <main>
+      <section class="banner">
+        <h1>Position en CSS</h1>
+      </section>
+
+      <section class="contenedor">
+        <h2>Tipos de posicionamiento</h2>
+        <p>
+          La propiedad <strong>position</strong> especifica cómo se ubica un elemento en la pantalla. Las coordenadas `top`, `right`, `bottom`, y `left` determinan su ubicación final dependiendo del tipo de posición que tenga.
+        </p>
+
+        <p>
+          <strong>Relative:</strong> Se mueve desde su posición original. Si le dices `top: 20px`, bajará 20px desde donde debería haber estado normalmente, pero el espacio original que ocupaba se mantiene vacío (no empuja a otros elementos).
+        </p>
+        <p>
+          <strong>Absolute:</strong> Pierde su lugar en el flujo normal de la página (como si flotara por encima de todo). Se posiciona tomando como referencia a su "padre" más cercano que tenga `position: relative`.
+        </p>
+        <p>
+          <strong>Fixed y Sticky:</strong> `Fixed` se clava en la pantalla del navegador y no se mueve aunque hagas scroll. `Sticky` es una mezcla: se comporta normal hasta que haces scroll y llega a un punto específico, donde se queda "pegado" al techo.
+        </p>
+
+        <article class="contenedorPrincipal">
+            <div class="caja" id="cajaAzul">Relative</div>
+            <div class="caja" id="cajaAmarilla">Absolute</div>
+            <div class="caja" id="cajaRoja">Absolute Centrada</div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
